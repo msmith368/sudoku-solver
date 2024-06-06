@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Sudoku Solver</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sudoku Solver</h1>
+
+        <div class="buttons">
+            <button onclick="generateSudoku();">Generate Sudoku</button>
+            <button onclick="loadSudoku();">Load Sudoku</button>
+            <button onclick="solveSudoku();">Solve Sudoku</button>
+            <button onclick="clearBoard();">Clear Board</button>
+        </div>
+
+        <div class="sudoku-container">
+            <table id="gui">
+            </table>
+        </div>
+
+        <div class="info-box">
+            <p>This sudoku solver and the table ui were created using JavaScript, and the solver follows a <a href="https://en.wikipedia.org/wiki/Sudoku_solving_algorithms" target="blank">
+                backtracking algorithm</a>.
+                You can view the code <a href="https://github.com/msmith368/sudoku-solver/" target="blank">
+                    here</a>.
+            </p>
+        </div>
+    </div>
+
+    <script src="sudoku.js"></script>
+</body>
+</html>
